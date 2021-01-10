@@ -9,6 +9,7 @@
         "hyva-themes/module-magento2-admin": "*"
     },
     "type": "magento2-module",
+    "version": "0.1.0",
     "license": [
         "BSD-3-Clause"
     ],
