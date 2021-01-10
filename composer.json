@@ -1,0 +1,23 @@
+{
+    "name": "catgento/magento2-admin-grids",
+    "description": "Magento 2 Admin Grid replacements using Hyvä Admin Grids",
+    "require": {
+        "php": "^7.4.0",
+        "ext-dom": "*",
+        "magento/framework": ">=101.0.0",
+        "magento/module-backend": ">=101.0.0",
+        "hyva-themes/module-magento2-admin": "*"
+    },
+    "type": "magento2-module",
+    "license": [
+        "BSD-3-Clause"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hyva\\AdminTest\\": ""
+        }
+    }
+}

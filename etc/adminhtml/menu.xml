@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <remove id="Magento_Catalog::catalog_products"/>
+        <add id="Catgento_AdminGrids::products" title="Products" translate="title" module="Catgento_AdminGrids" parent="Magento_Catalog::inventory" sortOrder="10"
+             dependsOnModule="Catgento_AdminGrids" resource="Catgento_AdminGrids::products" action="hyva_admin/products/grid"/>
+    </menu>
+</config>
+

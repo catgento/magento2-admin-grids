@@ -1,0 +1,19 @@
+<?php declare(strict_types=1);
+
+/*
+ * This is an example template showing how values from multiple columns can be rendered in one cell.
+ * The current column is "image", and the other column that is rendered here also is "image_label".
+ */
+
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Hyva\Admin\ViewModel\HyvaGrid\CellInterface $cell */
+$cell = $block->getData('cell');
+$key = $cell->getColumnDefinition()->getKey();
+$labelCell = $cell->getRow()->getCell($key . '_label');
+
+?>
+
+<img src="<?= $escaper->escapeHtmlAttr($cell->getTextValue()) ?>"
+     alt="<?= $labelCell ? $escaper->escapeHtmlAttr($labelCell->getTextValue()) : '' ?>"/>
