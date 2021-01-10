@@ -16,7 +16,7 @@
         </exclude>
     </columns>
     <actions idColumn="id">
-        <action id="edit" label="Edit" url="catalog/product/edit" />
+        <action id="edit" label="Edit" url="*/*/edit" />
     </actions>
     <massActions idColumn="id" idsParam="ids">
         <action id="reindex" label="Reindex" url="*/massAction/reindex"/>

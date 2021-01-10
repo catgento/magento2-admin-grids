@@ -1,7 +1,15 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="hyva_admin_grid"/>
     <body>
+        <referenceBlock name="products_list" remove="true" />
+        <referenceBlock name="product_listing" remove="true" />
         <referenceContainer name="content">
             <block class="Hyva\Admin\Block\Adminhtml\HyvaGrid" name="products-grid">
                 <arguments>

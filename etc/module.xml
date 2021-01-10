@@ -4,6 +4,7 @@
     <module name="Catgento_AdminGrids">
         <sequence>
             <module name="Magento_Backend"/>
+            <module name="Magento_Catalog"/>
             <module name="Hyva_Admin"/>
         </sequence>
     </module>
