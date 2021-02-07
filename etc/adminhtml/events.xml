@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="hyva_grid_column_definition_build_after_product_grid">
+        <observer name="hide_user_defined_columns" instance="Catgento\AdminGrids\Observer\HideColumnsObserver" />
+    </event>
+</config>
