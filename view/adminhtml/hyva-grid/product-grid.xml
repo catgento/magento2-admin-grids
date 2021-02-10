@@ -9,10 +9,10 @@
             <column name="sku" sortOrder="20"/>
             <column name="name"/>
             <column name="image" type="magento_product_image" renderAsUnsecureHtml="true" label="Main Image" template="Catgento_AdminGrids::product/image.phtml" initiallyHidden="true"/>
+            <column name="category_ids" type="magento_category" label="Product Categories"/>
             <column name="price" type="price"/>
         </include>
         <exclude>
-            <column name="category_gear"/>
             <column name="custom_design"/>
             <column name="custom_design_from"/>
             <column name="custom_design_to"/>
@@ -52,12 +52,15 @@
             <column name="small_image"/>
             <column name="thumbnail_label"/>
             <column name="category_links"/>
+            <column name="thumbnail"/>
+            <column name="media_gallery"/>
         </exclude>
     </columns>
     <actions idColumn="id">
         <action id="edit" label="Edit" url="*/*/edit"/>
     </actions>
     <massActions idColumn="id" idsParam="ids">
+        <action id="update_attributes" label="Update Attributes" url="*/product_action_attribute/edit"/>
         <action id="reindex" label="Reindex" url="*/massAction/reindex"/>
         <action id="delete" label="Delete" url="*/massAction/delete" requireConfirmation="true"/>
     </massActions>
@@ -68,6 +71,9 @@
         </label>
     </entityConfig>
     <navigation>
+        <buttons>
+            <button id="new" label="New Product" url="*/*/new/set/4/type/simple/"/>
+        </buttons>
         <pager>
             <defaultPageSize>20</defaultPageSize>
             <pageSizes>30,50,100,200</pageSizes>
@@ -81,6 +87,7 @@
             <filter column="id"/>
             <filter column="name"/>
             <filter column="price" filterType="Hyva\Admin\Model\GridFilter\ValueRangeFilter"/>
+            <filter column="category_ids"/>
         </filters>
     </navigation>
 </grid>

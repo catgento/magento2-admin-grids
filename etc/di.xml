@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Hyva\Admin\Model\DataType\DataTypeFacade">
+        <arguments>
+            <!-- note: order matters - generic DataTypes (e.g. object, unknown) come after more specific ones -->
+            <argument name="dataTypeClassMap" xsi:type="array">
+                <item name="magento_category" xsi:type="string">Catgento\AdminGrids\Model\DataType\CategoryNameDataType</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

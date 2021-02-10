@@ -14,6 +14,6 @@ $key = $cell->getColumnDefinition()->getKey();
 $labelCell = $cell->getRow()->getCell($key . '_label');
 
 ?>
-
+hola
 <img src="<?= $escaper->escapeHtmlAttr($cell->getTextValue()) ?>"
      alt="<?= $labelCell ? $escaper->escapeHtmlAttr($labelCell->getTextValue()) : '' ?>"/>

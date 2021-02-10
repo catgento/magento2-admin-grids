@@ -24,8 +24,9 @@ class HideColumnsObserver implements ObserverInterface
         'special_to_date',
         'manufacturer',
         'meta_title',
-        'meta_keywords',
+        'meta_keyword',
         'meta_description',
+        'minimal_price',
         'news_from_date',
         'news_to_date',
         'new_theme',
@@ -37,8 +38,9 @@ class HideColumnsObserver implements ObserverInterface
         'url_key',
         'msrp',
         'gift_message_available',
-        'tax_class',
-        'media_gallery'
+        'tax_class_id',
+        'weight',
+        'updated_at'
     );
 
     /**
