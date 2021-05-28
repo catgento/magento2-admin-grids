@@ -23,4 +23,4 @@ These are some reasons for replacing Magento 2 Admin Grids:
 * Native Grids are slow to load (with Hyvä Grids, grids load 3-4x faster)
 * Native Filtering is complex and requires so many clicks. When you have many people working every day with products, filters become
 essential for their work. Hyvä Admin Grids places the filters back to the top of the columns
-* Customization and maintainability: because working with Hyvä (tailwind and Alpine.js) is easier and funnier than working with Magento UI Components
+* Customization and maintainability: because working with Hyvä (tailwind and Alpine.js) is easier and more fun than working with Magento UI Components
