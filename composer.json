@@ -4,8 +4,8 @@
     "require": {
         "php": "^7.4.0",
         "ext-dom": "*",
-        "../../vendor/magento/framework": ">=101.0.0",
-        "../../vendor/magento/module-backend": ">=101.0.0",
+        "magento/framework": ">=101.0.0",
+        "magento/module-backend": ">=101.0.0",
         "hyva-themes/module-magento2-admin": "*"
     },
     "type": "magento2-module",
